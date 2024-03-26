@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+    int dogum_gunu;
+    int simdiki_yil;
+    int yas;
+
+    printf("*************************************\n");
+    printf("*      DOĞUM GÜNÜ KUTLAMA PROGRAMI   *\n");
+    printf("*************************************\n");
+
+    printf("Doğum yılınızı girin: ");
+    scanf("%d", &dogum_gunu);
+
+    printf("Şu anki yılı girin: ");
+    scanf("%d", &simdiki_yil);
+
+    yas = simdiki_yil - dogum_gunu;
+
+    printf("\n-------------------------------------\n");
+    printf("Yaşınız: %d\n", yas);
+
+    if (yas < 0) {
+        printf("Girdiğiniz bilgiler yanlış olabilir.\n");
+    } else if (yas == 0) {
+        printf("Doğum gününüz bugün! Kutlu olsun!\n");
+    } else {
+        printf("Doğum gününüz %d yaşında! Kutlu olsun!\n", yas);
+    }
+    printf("-------------------------------------\n");
+
+    return 0;
+}
